@@ -1,0 +1,28 @@
+{
+	"name": "01-fundamentos",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"start": "npm run build && node --experimental-specifier-resolution=node ./dist/index.js",
+		"start:dev": "nodemon src/index.ts"
+	},
+	"keywords": [],
+	"author": "Benjamin Condori Vasquez",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@apollo/datasource-rest": "^6.3.0",
+		"@apollo/server": "^4.10.4",
+		"graphql": "^16.9.0",
+		"uuid": "^10.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.10",
+		"@types/uuid": "^10.0.0",
+		"nodemon": "^3.1.4",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.3"
+	}
+}
